@@ -1,0 +1,17 @@
+{
+  "name": "cachebrowser-packager",
+  "version": "0.1.0",
+  "repository": "https://github.com/CacheBrowser/cachebrowser",
+  "depenencies": {
+    "electron-builder": "*"
+  },
+  "scripts": {
+    "release": "gulp dist"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0",
+    "electron-builder": "file:/Users/hadi/Dev/Repos/electron-builder3",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7"
+  }
+}

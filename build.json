@@ -1,0 +1,36 @@
+{
+  "build": {
+    "appId": "net.cachebrowser.cachebrowserui",
+    "extraFiles": [
+      {
+        "from": "dist/cachebrowser",
+        "to": "CacheBrowser",
+        "filter": [
+          "**/*",
+          "**/.*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "gui/resources/windows/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerHeaderIcon": "gui/resources/windows/setup-icon.ico"
+    },
+    "mac": {
+      "icon": "gui/resources/osx/icon.icns"
+    },
+    "dmg": {
+      "icon": "gui/resources/osx/dmg-icon.icns",
+      "background": "gui/resources/osx/dmg-background.png"
+    }
+  },
+  "directories": {
+    "buildResources": "gui/resources",
+    "app": "gui/build"
+  }
+}
