@@ -4,9 +4,10 @@ block_cipher = None
 
 
 a = Analysis(['cachebrowser_run.py'],
-             pathex=['./cachebrowser/cachebrowser'],
+             pathex=['./cachebrowser'],
              binaries=None,
-             hiddenimports=['SocketServer'],
+             datas=[('data/mitmproxy', 'mitmproxy')],
+             hiddenimports=['SocketServer', 'mitmproxy'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],

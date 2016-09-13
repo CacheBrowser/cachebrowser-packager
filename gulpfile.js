@@ -34,7 +34,7 @@ gulp.task('ui-build', ['ui-init'], done => {
 })
 
 
-gulp.task('ui-bundle', ['ui-build'], done => {
+gulp.task('ui-bundle', ['ui-build', 'cachebrowser-core'], done => {
     var buildConfig = require('./build.json')
     electronBuilder.build({
         devMetadata: buildConfig
