@@ -1,6 +1,8 @@
 [submodule "cachebrowser"]
 	path = cachebrowser
 	url = https://github.com/CacheBrowser/cachebrowser
+	branch = master
 [submodule "gui"]
 	path = gui
 	url = https://github.com/CacheBrowser/cachebrowser-ui
+	branch = master
